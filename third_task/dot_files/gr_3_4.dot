@@ -1,0 +1,24 @@
+digraph {
+    rankdir = LR;
+    label = "Автомат 3.4. (ответ)";
+    "" [shape = none];
+    node [shape = circle];
+    "q2" [shape="doublecircle" ];
+    "q5" [shape="doublecircle" ];
+    "q7" [shape="doublecircle" ];
+    ""->q1;
+    q1->q2[label="b,c"]
+    q2->q5[label="c"]
+    q2->q3[label="a"]
+    q2->q6[label="b"]
+    q3->q4[label="b"]
+    q4->q3[label="a"]
+    q4->q5[label="c"]
+    q5->q5[label="c"]
+    q5->q6[label="b"]
+    q5->q3[label="a"]
+    q6->q7[label="a"]
+    q7->q6[label="b"]
+    q7->q3[label="a"]
+    q7->q5[label="c"]
+}

@@ -1,0 +1,20 @@
+digraph {
+    rankdir = LR;
+    label = "Автомат 3.1.1.";
+    "" [shape = none];
+    node [shape = circle];
+    q10 [shape="doublecircle" ];
+    ""->q1;
+    q1->q2[label="lamb"]
+    q2->q3[label="a"]
+    q3->q4[label="b"]
+    q4->q5[label="a"]
+    q5->q9[label="lamb"]
+    q1->q6[label="lamb"]
+    q6->q7[label="a"]
+    q7->q8[label="b"]
+    q8->q9[label="lamb"]
+    q9->q10[label="a"]
+    q1->q9[label="lamb"]
+    q9->q1[label="lamb"]
+}
