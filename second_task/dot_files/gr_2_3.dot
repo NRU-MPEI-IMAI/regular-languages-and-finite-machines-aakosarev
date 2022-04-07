@@ -1,0 +1,20 @@
+digraph {
+    rankdir = LR;
+    label = "Автомат 2.3. (ответ)";
+    "" [shape = none];
+    node [shape = circle];
+    q1_p1 [shape="doublecircle" ];
+    ""->q1_p1;
+    q1_p1->q2_p1[label="a"];
+    q1_p1->q1_p2[label="b"];
+    q1_p2->q2_p2[label="a"];
+    q1_p2->q1_p3[label="b"];
+    q1_p3->q2_p3[label="a"];
+    q1_p3->q1_p1[label="b"];
+    q2_p1->q1_p1[label="a"];
+    q2_p1->q2_p2[label="b"];
+    q2_p2->q1_p2[label="a"];
+    q2_p2->q2_p3[label="b"];
+    q2_p3->q1_p3[label="a"];
+    q2_p3->q2_p1[label="b"];
+}

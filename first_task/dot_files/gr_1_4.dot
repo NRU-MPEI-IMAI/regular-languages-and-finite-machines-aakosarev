@@ -1,0 +1,7 @@
+digraph {
+    rankdir = LR;
+    label = "Автомат 1.4. (ответ)";
+    "" [shape = none];
+    q1 [shape="doublecircle" ];
+    ""->q1;
+}

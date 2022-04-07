@@ -1,0 +1,24 @@
+digraph {
+    rankdir = LR;
+    label = "Автомат 2.5.2.";
+    "" [shape = none];
+    node [shape = circle];
+    g2 [shape="doublecircle" ];
+    g3 [shape="doublecircle" ];
+    g4 [shape="doublecircle" ];
+    g5 [shape="doublecircle" ];
+    g6 [shape="doublecircle" ];
+    ""->g1;
+    g1->g4[label="a"]
+    g1->g2[label="b"]
+    g2->g5[label="a"]
+    g2->g3[label="b"]
+    g3->g6[label="a"]
+    g3->g1[label="b"]
+    g4->g1[label="a"]
+    g4->g5[label="b"]
+    g5->g2[label="a"]
+    g5->g6[label="b"]
+    g6->g3[label="a"]
+    g6->g4[label="b"]
+}

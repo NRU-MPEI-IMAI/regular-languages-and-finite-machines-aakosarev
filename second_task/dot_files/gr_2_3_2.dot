@@ -1,0 +1,14 @@
+digraph {
+    rankdir = LR;
+    label = "Автомат 2.3.2.";
+    "" [shape = none];
+    node [shape = circle];
+    p1 [shape="doublecircle" ];
+    ""->p1;
+    p1->p2[label="b"]
+    p1->p1[label="a"]
+    p2->p2[label="a"]
+    p2->p3[label="b"]
+    p3->p3[label="a"]
+    p3->p1[label="b"]
+}

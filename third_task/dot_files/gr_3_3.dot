@@ -1,0 +1,21 @@
+digraph {
+    rankdir = LR;
+    label = "Автомат 3.3. (ответ)";
+    "" [shape = none];
+    node [shape = circle];
+    "q1" [shape="doublecircle" ];
+    "{q1,q2}" [shape="doublecircle" ];
+    "{q1,q2,q3}" [shape="doublecircle" ];
+    "{q1,q3}"[shape="doublecircle" ];
+    ""->q1;
+    q1->"{q1,q2}"[label="a"]
+    q1->q2[label="b"]
+    "{q1,q2}"->"{q1,q2,q3}"[label="a"]
+    "{q1,q2}"->"{q2,q3}"[label="b"]
+    q2->q3[label="a,b"]
+    "{q1,q2,q3}"->"{q1,q2,q3}"[label="a,b"]
+    "{q2,q3}"->q3[label="a"]
+    "{q2,q3}"->"{q1,q3}"[label="b"]
+     q3->q1[label="b"]
+    "{q1,q3}"->"{q1,q2}"[label="a,b"]
+}
